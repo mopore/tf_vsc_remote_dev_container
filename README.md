@@ -58,14 +58,21 @@ The output should list your GPU as an available device:
 
 # Usage
 
-## Client Laptop
+## Client Laptop with VSC
 Given all prerequisites are met, the following steps are required to start developing remotely:
+
+### Connect to Host PC vi SSH
 Open a SSH remote connection by using the command palette in VSC and selecting `Remote-SSH: Connect to Host...`.
 ![Command Palette](doc/command_palette.png)
 Select your configuration. This will scan your existing SSH configurations and list them in the command palette.
-Open the project folder of the checked out project on the Host PC.
-Choose `Reopen in Container` from the command palette.
 
+### Open Project Folder
+Open the project folder of the checked out project on the Host PC.
+![Open Folder](doc/open_folder.png)
+
+### Reopen in Container
+Choose `Reopen in Container` from the command palette to connect to the dev container and start developing.
+![Reopen in Container](doc/reopen_in_container.png)
 
 # Additional Information
 
@@ -90,3 +97,9 @@ dev container is used via VSC and *not* after the container start with docker co
 - [VSC Remote Containes extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - [VSC Remote SSH extension](https://code.visualstudio.com/docs/remote/ssh) 
 - [Quistart Guide for Tensorflow](https://www.tensorflow.org/tutorials/quickstart/beginner)
+
+
+# Release History
+
+# v0.1.0 (Untagged)
+- Provide initial version of the project.
