@@ -118,5 +118,5 @@ dev container is used via VSC and *not* after the container start with docker co
 
 # Release History
 
-# v0.1.0 (Untagged)
+# v0.1.0
 - Provide initial version of the project.
