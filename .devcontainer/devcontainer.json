@@ -14,12 +14,11 @@
 				"ms-python.vscode-flake8"	
 			]
 		}
-	},
+	}
 	// "portsAttributes": {
 	// 	"9000": {
 	// 		"label": "Hello Remote World",
 	// 		"onAutoForward": "notify"
 	// 	}
 	// },
-	"postCreateCommand": "pip3 install -r requirements.txt"
 }
