@@ -91,6 +91,11 @@ Open the project folder of the checked out project on the Host PC.
 Choose `Reopen in Container` from the command palette to connect to the dev container and start developing.
 ![Reopen in Container](doc/reopen_in_container.png)
 
+## General Usage
+Open the command palette and select `close connection` to close the connection to the dev container. This will not stop the container. The container will stay alive until stopped manually or the host PC is restarted.
+Open the command palette with  `ctrl + shift + p` on Linux or `cmd + shift + p` on MacOS.
+
+
 # Additional Information
 
 ## Warnings and Decisions related to the Docker Compose File
@@ -117,6 +122,9 @@ dev container is used via VSC and *not* after the container start with docker co
 
 
 # Release History
+
+# v0.2.0
+- Add git and flake8
 
 # v0.1.0
 - Provide initial version of the project.
