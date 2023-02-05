@@ -3,8 +3,8 @@ version: "3"
 services:
   jni_tf_dev_container:
     container_name: "jni_tf_dev_container"
-    image: tensorflow/tensorflow:2.10.0-gpu
-    user: "1000:1000"
+    image: jni_tf_dev_container
+    user: "jni"
     restart: unless-stopped
     command: /bin/sh -c "while sleep 1000; do :; done"
     volumes:

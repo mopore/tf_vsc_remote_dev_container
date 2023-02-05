@@ -39,7 +39,24 @@ minutes.
 
 # Setup
 ## PC with GPU (Host)
-Check out this project an run `docker-compose up -d` to start the dev container.
+
+### 1. Check out the project
+```bash
+g clone git@github.com:mopore/tf_vsc_remote_dev_container.git
+```
+
+### 2. Create Local Docker Image
+Run:
+```bash
+docker build -t jni_tf_dev_container .
+```
+
+### 3. Start the Container
+Start the dev container with docker compose:
+```
+```bash
+docker-compose up -d
+```
 The docker compose file is configured to stay alive unless stopped. This means that the container will be restarted after a system restart of the PC host. Also the container stays running after a client disconnect consequently. 
 
 ### Quickly check if tensorflow with GPU support is working
@@ -61,16 +78,16 @@ The output should list your GPU as an available device:
 ## Client Laptop with VSC
 Given all prerequisites are met, the following steps are required to start developing remotely:
 
-### Connect to Host PC vi SSH
+### 1. Connect to Host PC vi SSH
 Open a SSH remote connection by using the command palette in VSC and selecting `Remote-SSH: Connect to Host...`.
 ![Command Palette](doc/command_palette.png)
 Select your configuration. This will scan your existing SSH configurations and list them in the command palette.
 
-### Open Project Folder
+### 2. Open Project Folder
 Open the project folder of the checked out project on the Host PC.
 ![Open Folder](doc/open_folder.png)
 
-### Reopen in Container
+### 3. Reopen in Container
 Choose `Reopen in Container` from the command palette to connect to the dev container and start developing.
 ![Reopen in Container](doc/reopen_in_container.png)
 
